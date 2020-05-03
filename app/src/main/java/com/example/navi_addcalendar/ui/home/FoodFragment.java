@@ -1,4 +1,4 @@
-package com.example.convenientfacilities_example.ui.home;
+package com.example.navi_addcalendar.ui.home;
 
 import android.os.Bundle;
 import android.os.StrictMode;
@@ -13,7 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.example.convenientfacilities_example.R;
+import com.example.navi_addcalendar.R;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserFactory;

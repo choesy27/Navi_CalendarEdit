@@ -1,5 +1,6 @@
-package com.example.convenientfacilities_example;
+package com.example.navi_addcalendar;
 // 편의시설 네비 드로워 어플
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,10 +11,11 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import com.example.convenientfacilities_example.ui.home.FoodFragment;
-import com.example.convenientfacilities_example.ui.home.HomeFragment;
-import com.example.convenientfacilities_example.ui.home.PublicartFragment;
-import com.example.convenientfacilities_example.ui.home.StorytellingFragment;
+import com.example.navi_addcalendar.calendar.CalendarFragment;
+import com.example.navi_addcalendar.ui.home.FoodFragment;
+import com.example.navi_addcalendar.ui.home.HomeFragment;
+import com.example.navi_addcalendar.ui.home.PublicartFragment;
+import com.example.navi_addcalendar.ui.home.StorytellingFragment;
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -50,29 +52,43 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new HomeFragment()).commit();
                 break;
+
             case R.id.nav_hospital:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new HospitalFragment()).commit();
                 break;
+
             case R.id.nav_parking:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new ParkingFragment()).commit();
                 break;
+
             case R.id.nav_bus:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new BusFragment()).commit();
                 break;
+
             case R.id.nav_food:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new FoodFragment()).commit();
                 break;
+
             case R.id.nav_storytelling:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new StorytellingFragment()).commit();
                 break;
+
             case R.id.nav_publicart:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new PublicartFragment()).commit();
+                break;
+
+            case R.id.nav_calendar:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new CalendarFragment()).commit();
+                break;
+
+            default:
                 break;
         }
 

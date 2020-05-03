@@ -1,4 +1,4 @@
-package com.example.convenientfacilities_example;
+package com.example.navi_addcalendar;
 
 import android.content.Context;
 

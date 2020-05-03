@@ -1,4 +1,4 @@
-package com.example.convenientfacilities_example.ui.home;
+package com.example.navi_addcalendar.ui.home;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,7 +12,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
-import com.example.convenientfacilities_example.R;
+import com.example.navi_addcalendar.R;
 
 public class HomeFragment extends Fragment {
 
