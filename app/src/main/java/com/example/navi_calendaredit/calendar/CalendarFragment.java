@@ -1,4 +1,4 @@
-package com.example.navi_addcalendar.calendar;
+package com.example.navi_calendaredit.calendar;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -23,7 +23,7 @@ import android.widget.CalendarView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.navi_addcalendar.R;
+import com.example.navi_calendaredit.R;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -53,6 +53,7 @@ public class CalendarFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_calendar, container, false);
+
         list = new ArrayList<>();
         builder = new AlertDialog.Builder(getActivity());
         textAdapter = new TextAdapter(list);
@@ -146,7 +147,7 @@ public class CalendarFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setHasOptionsMenu(true);                        // Make sure you have this line of code.
+        setHasOptionsMenu(true);
     }
 
     @Override
@@ -179,6 +180,9 @@ public class CalendarFragment extends Fragment {
         while (cursor.moveToNext()) {
             list.add(cursor.getString(cursor.getColumnIndex(MemoContract.MemoEntry.COLUMN_NAME_TITLE)));
         }
+
+        textAdapter.notifyDataSetChanged();
+//      ((MainActivity) MainActivity.mContext).show();
     }
 
     @Override

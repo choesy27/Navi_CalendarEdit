@@ -1,4 +1,4 @@
-package com.example.navi_addcalendar.ui.home;
+package com.example.navi_calendaredit.ui.home;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

@@ -1,4 +1,4 @@
-package com.example.navi_addcalendar.calendar;
+package com.example.navi_calendaredit.calendar;
 
 import android.provider.BaseColumns;
 

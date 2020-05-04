@@ -1,4 +1,4 @@
-package com.example.navi_addcalendar.calendar;
+package com.example.navi_calendaredit.calendar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,7 +12,7 @@ import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.navi_addcalendar.R;
+import com.example.navi_calendaredit.R;
 
 public class MemoActivity extends AppCompatActivity {
     private EditText mTitle;
@@ -43,6 +43,7 @@ public class MemoActivity extends AppCompatActivity {
             }
         }
     }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

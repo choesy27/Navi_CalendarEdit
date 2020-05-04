@@ -1,4 +1,4 @@
-package com.example.navi_addcalendar;
+package com.example.navi_calendaredit;
 
 import android.content.Context;
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.navi_addcalendar">
+    package="com.example.navi_calendaredit">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -12,16 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity
-            android:name="com.example.navi_addcalendar.calendar.MemoActivity">
+        <activity android:name="com.example.navi_calendaredit.calendar.MemoActivity">
+
+        </activity>
+        <activity android:name="com.example.navi_calendaredit.calendar.CalendarFragment">
 
         </activity>
         <activity
-            android:name="com.example.navi_addcalendar.calendar.CalendarFragment">
-
-        </activity>
-        <activity
-            android:name="com.example.navi_addcalendar.MainActivity"
+            android:name="com.example.navi_calendaredit.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>

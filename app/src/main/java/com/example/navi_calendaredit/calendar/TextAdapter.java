@@ -1,4 +1,4 @@
-package com.example.navi_addcalendar.calendar;
+package com.example.navi_calendaredit.calendar;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,7 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.navi_addcalendar.R;
+import com.example.navi_calendaredit.R;
 
 import java.util.ArrayList;
 
